@@ -9,8 +9,7 @@ public class Conn {
 
     private String url = "localhost";
     private int port = 5432;
-            //Test branch Sandra push
-
+            //Test branch Weronikas push
     private String databaseName = "postgres?currentSchema=sep4";
     private String username = "postgres";
     private String password = "kaja1806";

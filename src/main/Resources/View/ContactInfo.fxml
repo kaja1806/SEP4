@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="border" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:  #678865;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sep4Project.Controller.ContactInfoController">
+
+
+    <children>
+        <TableView fx:id="ManufacturerTable" layoutX="244.0" layoutY="48.0" prefHeight="285.0" prefWidth="342.0" style="-fx-background-color: #f6f5f3;" AnchorPane.bottomAnchor="67.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="48.0">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="85.0" text="Name" />
+                <TableColumn fx:id="address" prefWidth="85.0" text="Address" />
+                <TableColumn fx:id="phone" prefWidth="85.0" text="Phone" />
+                <TableColumn fx:id="email" prefWidth="85.0" text="Email address" />
+
+            </columns>
+        </TableView>
+        <Pane layoutX="14.0" layoutY="57.0" prefHeight="343.0" prefWidth="250.0">
+            <children>
+                <Label layoutX="37.0" layoutY="2.0" text="Contact information" textAlignment="CENTER" textFill="#d7a33b">
+                    <font>
+                        <Font name="Impact" size="20.0" />
+                    </font></Label>
+                <Label layoutX="21.0" layoutY="64.0" text="Name" textFill="#e4e4da">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font></Label>
+                <Label layoutX="20.0" layoutY="146.0" text="Phone" textFill="#e4e4da">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font></Label>
+                <Label layoutX="-1.0" layoutY="186.0" text="Email Address" textFill="#e4e4da">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font></Label>
+                <TextField fx:id="Name" layoutX="85.0" layoutY="60.0" prefHeight="25.0" prefWidth="140.0" />
+                <TextField fx:id="Address" layoutX="85.0" layoutY="100.0" prefHeight="25.0" prefWidth="140.0" />
+                <TextField fx:id="Phone" layoutX="85.0" layoutY="182.0" prefHeight="25.0" prefWidth="140.0" />
+                <TextField fx:id="Email" layoutX="85.0" layoutY="142.0" prefHeight="25.0" prefWidth="140.0" />
+                <Label layoutX="15.0" layoutY="104.0" text="Address" textFill="#e4e4da">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font></Label>
+                <Button fx:id="addNew" layoutX="87.0" layoutY="239.0" mnemonicParsing="false" onAction="#addNewManufacturer" style="-fx-background-color: #d7a33b;" text="Add" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font></Button>
+            </children>
+        </Pane>
+    </children>
+
+
+</AnchorPane>

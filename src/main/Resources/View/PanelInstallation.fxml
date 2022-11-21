@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ddddbb;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sep4Project.Controller.PanelInstallationController">
+
+
+    <children>
+        <TableView fx:id="panelInstallTable" layoutX="5.0" layoutY="102.0" prefHeight="212.0" prefWidth="590.0"  style="-fx-background-color: #f6f5f3;" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="54.0" text="ID" />
+                <TableColumn fx:id="panelType" prefWidth="85.0" text="Type" />
+                <TableColumn fx:id="placement" prefWidth="122.0" text="Placement" />
+                <TableColumn fx:id="manufacture" prefWidth="189.0" text="Manufacture" />
+                <TableColumn fx:id="date" prefWidth="136.0" text="Date" />
+            </columns>
+        </TableView>
+        <Pane layoutX="7.0" prefHeight="97.0" prefWidth="590.0"  style="-fx-background-color: #ddddbb;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <children>
+                <TextField fx:id="panelID" layoutX="79.0" layoutY="14.0" prefHeight="25.0" prefWidth="150.0" />
+                <DatePicker fx:id="panelInstallDate" layoutX="79.0" layoutY="53.0" prefHeight="25.0" prefWidth="150.0" />
+                <Label layoutX="21.0" layoutY="18.0" text="Panel ID:" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font></Label>
+                <Button fx:id="checkspesific" layoutX="270.0" layoutY="53.0" mnemonicParsing="false" onAction="#checkButton" style="-fx-background-color: #A4B881;" text="Check" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font></Button>
+                <Label layoutX="24.0" layoutY="57.0" text="Date:" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="13.0" />
+                    </font></Label>
+            </children>
+        </Pane>
+    </children>
+
+</AnchorPane>

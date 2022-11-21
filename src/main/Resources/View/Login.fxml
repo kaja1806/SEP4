@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e4e4da;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sep4Project.Controller.LogInController">
+    <children>
+        <Pane layoutX="39.0" layoutY="237.0" prefHeight="112.0" prefWidth="502.0">
+            <children>
+                <Button id="login" fx:id="login" layoutX="389.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #F7B733;" text="Log in" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="15.0" />
+                    </font></Button>
+                <PasswordField fx:id="Password" layoutX="170.0" layoutY="72.0" text="Password" />
+                <TextField id="Username" fx:id="username" layoutX="170.0" layoutY="21.0" text="Username" />
+            </children>
+        </Pane>
+        <Label fx:id="warningField" alignment="CENTER" contentDisplay="CENTER" layoutX="216.0" layoutY="351.0" prefHeight="37.0" prefWidth="240.0" textAlignment="CENTER" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="144.0" layoutY="117.0" prefHeight="112.0" prefWidth="351.0" style="-fx-text-fill: #F7B733;" text="Welcome to GBESolar&#10;&#10;Log in using your GBESolar account" textAlignment="CENTER">
+            <font>
+                <Font name="Impact" size="21.0" />
+            </font></Label>
+        <Label fx:id="error" layoutX="216.0" layoutY="117.0" prefHeight="17.0" prefWidth="149.0" />
+    </children>
+</AnchorPane>
